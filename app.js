@@ -20,7 +20,7 @@ var app = express();
 // Set up some express settings
 
 // Set the port for express to use to be either process.env.PORT or 3000
-app.set('port', 8080);
+app.set('port', process.env.PORT || 8080);
 
 // Specify the directory that contains the views e.g. the jade files
 app.set('views', path.join(__dirname, 'views'));
